@@ -1,0 +1,9 @@
+image: php:8.1
+
+pipeline:
+  default:
+    - step:
+        name: "Run Hello World"
+        script:
+          - echo "Running CI/CD pipeline"
+          - php index.php
